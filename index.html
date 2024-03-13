@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programlama</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            padding-top: 70px; /* Navbar'ın içeriği örtmemesi için padding ekleyelim */
+        }
+
+        /* İletişim bölümü için özel stil */
+        #iletisim {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Web Programlama</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kurslar">Kurslar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#iletisim">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+    <div class="container mt-5">
+        <h1>Web Programlama</h1>
+        <p>Web programlama ile ilgili çeşitli konuları öğrenin.</p>
+    </div>
+
+    <!-- Kurslar Bölümü -->
+    <div id="kurslar" class="container mt-5">
+        <h1>Kurslar</h1> <br>
+        <h1>FRONTEND</h1> <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/1.kurs3.jpg" class="card-img-top" alt="Kurs 1">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML,CSS,JAVASCRİPT</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/react-logo-1.png" class="card-img-top" alt="Kurs 2">
+                    <div class="card-body">
+                        <h5 class="card-title">REACT</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/angular.png" class="card-img-top" alt="Kurs 3">
+                    <div class="card-body">
+                        <h5 class="card-title">ANGULAR</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br>
+        <h1>BACKEND</h1> <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/mysql1.png" class="card-img-top" alt="Kurs 1">
+                    <div class="card-body">
+                        <h5 class="card-title">MYSQL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/api2.webp" class="card-img-top" alt="Kurs 2">
+                    <div class="card-body">
+                        <h5 class="card-title">APIs</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <img src="images/web2.jpg" class="card-img-top" alt="Kurs 3">
+                    <div class="card-body">
+                        <h5 class="card-title">WEB SECURITY</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- İletişim Bölümü -->
+    <div id="iletisim" class="container mt-5">
+        <h2>İletişim</h2>
+        <p>Bizimle iletişime geçmek için aşağıdaki formu kullanabilirsiniz.</p>
+        <!-- İletişim Formu (Bootstrap'un form elemanları kullanılmıştır) -->
+        <form>
+            <div class="form-group">
+                <label for="adSoyad">Ad Soyad</label>
+                <input type="text" class="form-control" id="adSoyad" placeholder="Adınız Soyadınız">
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta Adresi</label>
+                <input type="email" class="form-control" id="email" placeholder="E-posta Adresiniz">
+            </div>
+            <div class="form-group">
+                <label for="mesaj">Mesajınız</label>
+                <textarea class="form-control" id="mesaj" rows="3" placeholder="Mesajınız"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS ve Popper.js (jQuery bağımlılığından dolayı) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
